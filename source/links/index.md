@@ -21,7 +21,7 @@ date: 2022-06-01 09:55:49
 先将本站的友链添加到您的友链，相关信息如下
 然后按照以下格式在本站留言区留言，待博主为您添上友链
 
->名称：添总
-头像链接：https://tiantianlikeu.github.io/images/ico/favicon.ico
-主页链接：https://tiantianlikeu.github.io/
+>名称：Tian的文档
+头像链接：https://ttlikeu.top/images/ico/favicon.ico
+主页链接：https://ttlikeu.top/
 说明信息：人生在勤，不索何获
