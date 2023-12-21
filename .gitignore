@@ -20,3 +20,4 @@ source/lib/Han/*
 !source/lib/Han/dist/
 
 public/
+.deploy_git/
