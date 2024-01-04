@@ -87,3 +87,18 @@ vim /etc/profile
 - 监控各个应用进程cpu和memory使用情况`pm2 monit`
 
 - 如果项目没有启动就执行 start 如果项目正在运行 就执行relaod`pm2 startOrReload <appName>`
+
+
+## 三、踩坑记录
+
+2024-1-3：试图在服务器上面安装node.js18，查看node版本的时候发生报错：
+
+![image-20240103185224803](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240103185224803.png)
+
+搜索资料发现是当前系统版本不支持高版本的node.js，查看当前系统版本：
+
+![image-20240103185613533](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240103185613533.png)
+
+**解决办法降级到node.js16...**
+
+**参考文章：**https://juejin.cn/post/7163899309425950751
