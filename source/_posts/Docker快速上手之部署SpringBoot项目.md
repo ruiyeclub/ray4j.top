@@ -103,6 +103,7 @@ docker pull redis:3.2
 ```xml
 docker run -p 6379:6379 -v /ray/redis/data:/data -v /ray/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf -d redis:3.2 redis-server /usr/local/etc/redis/redis.conf --appendonly yes
 ```
+加密码`--requirepass "admin"`
 #### 七、Docker部署SpringBoot项目
 
 1.将项目打包成jar包(假设名字为myblog.jar)，并编写一个Dockerfile文件，文件内容如下：

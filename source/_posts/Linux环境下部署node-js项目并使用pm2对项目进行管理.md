@@ -80,7 +80,9 @@ vim /etc/profile
 
 - 删除指定应用：`pm2 delete <appName> [options]`，如：`pm2 delete httpServer`，如果修改应用配置行为，最好先删除应用后，重新启动方才生效，如修改脚本入口文件
 
-- 杀掉pm2管理的所有进程`pm2 kill` 
+- 杀掉pm2管理的所有进程：`pm2 kill` 
+
+- 删除pm2日志：`pm2 flush`
 
 - 查看指定应用的日志，即标准输出和标准错误`pm2 logs <appName>`
 
