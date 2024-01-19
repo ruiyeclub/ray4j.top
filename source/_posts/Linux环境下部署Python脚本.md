@@ -89,8 +89,27 @@ ps -ef | grep python # 命令查找进程ID。
 ```
 
 
+## 三、升级python版本
 
-## 三、踩坑记录
+1.[官网下载安装包]([www.python.org/downloads/](https://link.juejin.cn/?target=https%3A%2F%2Fwww.python.org%2Fdownloads%2F))
+
+2.解压：`tar  -xf   Python-3.10.4.tgz`
+
+3.进入解压后的目录：`./configure && make && make install `
+
+4.先找到python文件，准备创建软链接
+
+![image-20240119145905288](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240119145905288.png)
+
+5.创建软连接（/usr/local/bin/python3.10是存放python文件目录）
+
+```xml
+ln -sf /usr/local/bin/python3.10 /usr/bin/python
+ln -sf /usr/local/bin/python3.10-config /usr/bin/python-config
+```
+
+
+## 四、踩坑记录
 
 1.使用nohup命令后，日志文件内没有日志输出，我遇到的问题是存在输出缓存，通过修改启动命令解决：
 
