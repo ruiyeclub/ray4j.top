@@ -56,8 +56,10 @@ yum install -y yum-utils device-mapper-persistent-data lvm2
 2.设置阿里云镜像源
 ```xml
 yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
 ```xml
 3.安装 Docker-CE
+```
 ```xml
 yum install docker-ce
 ```
