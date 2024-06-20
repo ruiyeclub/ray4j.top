@@ -18,6 +18,11 @@ tags:
 
 **注意：此方法只适用于单个Python脚本的打包。**
 
+4. 在使用 PyInstaller 打包项目时，有时会遇到缺少 Python 库的问题，导致打包失败。
+```python
+pyinstaller --hidden-import=some_module --onefile your_script.py
+```
+
 
 
 ## 使用cx_Freeze库进行打包
