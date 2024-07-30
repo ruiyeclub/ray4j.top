@@ -92,20 +92,27 @@ sudo certbot --nginx
 
 ```python
 server {
-		listen 443 ssl;
-		server_name 域名.com;
+       listen 443 ssl;
+       server_name 域名.com;
 
-		ssl_certificate /etc/letsencrypt/live/地址/fullchain.pem;
-		ssl_certificate_key /etc/letsencrypt/live/地址/privkey.pem;
+       ssl_certificate /etc/letsencrypt/live/地址/fullchain.pem;
+       ssl_certificate_key /etc/letsencrypt/live/地址/privkey.pem;
 
-		location / {
-			proxy_pass http://ip:port;
-			proxy_set_header Host $host;
-			proxy_set_header X-Real-IP $remote_addr;
-			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-			proxy_set_header X-Forwarded-Proto $scheme;
-		}
+       location / {
+          proxy_pass http://ip:port;
+          proxy_set_header Host $host;
+          proxy_set_header X-Real-IP $remote_addr;
+          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+          proxy_set_header X-Forwarded-Proto $scheme;
+       }
 }
 ```
+
+## 四、配置多个域名
+
+可以现在nginx.conf中配置域名，然后在输入`sudo certbot --nginx`
+
+![image-20240730185947293](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240730185947293.png)
+
 
 参考文章：[Let's Encrypt在Linux上免费配置HTTPS](https://zhuanlan.zhihu.com/p/696518542)
