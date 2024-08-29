@@ -131,5 +131,17 @@ response = requests.post(
 
 
 
-参考链接：https://stackoverflow.com/questions/31197659/how-to-send-request-to-telegram-bot-api
+参考链接：https://stackoverflow.com/questions/31197659/how-to-send-request-to-telegram-bot-api![](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240417151949471.png)
 
+
+
+## 更新内容
+
+将消息推送至群组
+
+1. 将机器人拉入群组，发送`/{message}@bot`消息
+2. 可以通过`https://api.telegram.org/bot{token}/getUpdates`获取群组id
+
+![image-20240829100959057](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240829100959057.png)
+
+这里群组id为-4583**9819
