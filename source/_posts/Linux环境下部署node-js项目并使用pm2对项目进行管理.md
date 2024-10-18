@@ -93,7 +93,7 @@ vim /etc/profile
 
 ## 三、踩坑记录
 
-2024-1-3：试图在服务器上面安装node.js18，查看node版本的时候发生报错：
+1. 2024-1-3：试图在服务器上面安装node.js18，查看node版本的时候发生报错：
 
 ![image-20240103185224803](https://ruiyeclub.oss-cn-shenzhen.aliyuncs.com/picgo/image-20240103185224803.png)
 
@@ -104,3 +104,18 @@ vim /etc/profile
 **解决办法降级到node.js16...**
 
 **参考文章：**https://juejin.cn/post/7163899309425950751
+
+
+2. 2024-10-18：在服务器运行pm2 start index.js命令报错
+
+项目在scripts配置运行环境，无法直接通过运行js文件启动服务。
+
+可通过pm2启动你的npm脚本
+```
+pm2 start npm --name "你的应用名" -- run start
+```
+这里的--name参数是给你的应用设置一个名字，-- run start是告诉pm2运行package.json中定义的start脚本。
+
+如果你的npm脚本是用来启动一个服务器，那么--name参数非常有用，这样你可以随时查看服务状态或者重启服务。
+
+
