@@ -114,6 +114,11 @@ vim /etc/profile
 ```
 pm2 start npm --name "你的应用名" -- run start
 ```
+也可以使用pm2启动python脚本
+```
+pm2 start python3 --name "你的应用名" -- main.py
+```
+
 这里的--name参数是给你的应用设置一个名字，-- run start是告诉pm2运行package.json中定义的start脚本。
 
 如果你的npm脚本是用来启动一个服务器，那么--name参数非常有用，这样你可以随时查看服务状态或者重启服务。
