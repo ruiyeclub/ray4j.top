@@ -65,3 +65,6 @@ tags:
 ### 11.其他
 
 Python、requirements等开发python的插件，让我可以更方便的在Idea中编写python代码。
+smart input pro自动切换输入法
+Gsonformat简化JSON和JavaBean之间的转换
+Free MyBatis Tool实现mapper间来回跳转
