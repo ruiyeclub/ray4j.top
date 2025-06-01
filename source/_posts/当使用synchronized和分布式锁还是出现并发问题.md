@@ -213,3 +213,4 @@ AND version = #{oldVersion}
 ```
 
 参考文章：[记录一次Redisson使用synchronized和分布式锁不生效的原因](https://article.juejin.cn/post/7392104848974528552)
+参考文章：[悲观锁、乐观锁、mybatis-plus实现乐观锁](https://www.cnblogs.com/dalaba/p/17879895.html)
