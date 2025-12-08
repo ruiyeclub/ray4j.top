@@ -133,4 +133,4 @@ RabbitMQ 原生不支持延迟队列，但可通过以下方式实现：
 本文档涵盖 RabbitMQ 的核心概念、工作机制及典型应用场景，适用于面试准备或技术方案设计参考。  
 **持续更新建议**：结合 RabbitMQ 官方文档（https://www.rabbitmq.com）和实际项目经验补充案例。
 
-PS: 该内容有DeepSeek R1深度学习总结（deepseek牛逼！！！）
+PS: 该内容由DeepSeek R1深度学习总结（deepseek牛逼！！！）
