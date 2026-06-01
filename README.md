@@ -14,7 +14,7 @@ Theme style reference [https://mrbird.cc/](https://mrbird.cc/).
 
 [https://tycoding.cn/](https://tycoding.cn/)
 
-## 操作指令
+## 操作指令（初次运行没有hexo 执行npm install -g hexo-cli命令）
 
 `hexo init` 命令用于初始化本地文件夹为网站的根目录
 
